@@ -1,0 +1,832 @@
+DATE:04.08.2026
+========================================================
+JEE
+=========================================
+JAVA ENTERPRISE EDITION
+TYPES OF APPLICATION
+===========================
+1.DESKTOP APPLICATION
+2.WEB APPLICATION
+3.MOBILE APPLICATION
+4.ML APPS
+HTML
+==================================
+HYPER TEXT MARKUP LANGUAGE
+PURPOSE
+====================================
+TO DEVELOP THE STRUCTURE OF CONTENT ON WEB PAGE
+WEB PAGE
+======================================
+IT IS AN ELECTRONIC PAGE WHERE DISPLAY SOME CONTENTS
+HTML IS COLLECTION OF ELEMENTS
+==================================
+LIST ELEMENT
+TABLE ELEMENT
+PARAGRAPH ELEMENT
+IMAGE ELEMENT
+JRAME ELEMENT
+==========================================
+EACH ELEMENT ARE REPRESENTED BY TAG
+TYPES OF TAG
+========================================
+1.OPENING TAG
+2.CLOSING TAG
+3.SELF CLOSING TAG
+<h1>TEST          </h1>
+open content       closing tag
+ing
+tag
+
+<img/>===SELF CLOSING TAG
+
+WHY HTML IS MARKUP LANGUAGE
+==========================================================
+A LANGUAGE IS CONSIDERED TO MARKUP IF THERE IS A TAG,ATTRIBUTE AND PARAMETERS ARE THERE
+LIST
+=======================================
+1.UNORDERED LIST
+2.ORDERED LIST
+3.DEFINATION LIST
+NAVIGATION
+================================
+1.INTER NAVIGATION
+2.INTRA NAVIGATION
+IFRAME
+=======================================================================
+IF YOU WANT TO DISPLAY THE CONTENT OF ONE PAGE INTO ANOTHER PAGE  WE WILL USE
+IFRAME
+
+
+DATE:05.08.2026
+========================================================================
+CSS STANDS FOR CASCADING STYLE SHEET
+CSS IS A STYLYING LANGUAGE
+PURPOSE
+===================================
+TO STYLE OR FORMATTING THE CONTENT OF HTML ELEMENT ON WEBPAGE
+IT IS DONE BY MEANS OF SET OF PROPERTIES
+PROPERTIES ARE IN KEY & VALUE PAIRS
+===================================
+EX: "color:red;"
+     key   value
+TYPES OF CSS
+==================================================
+1.INLINE CSS
+2.INTERNAL CSS
+3.EXTERNAL CSS
+INLINE CSS                INTERNAL CSS
+================================================
+1.UNIQUE STYLING          1.MULTIPLE STYLING
+2.FOR APPLYING NOT        2.MORE STYLES
+MORE THAN THREE STYLES
+
+EXTERNAL CSS
+==============================
+WHEN CSS ARE MORE COMPLEX AND CSS ARE CODE ARE LENGTHY
+MULTIPLE DOCUMENT WANT TO APPLY THE SAME CSS
+SELECTOR
+============================
+1.TAG NAME
+2.ID VALUE
+3.CLASS VALUE
+TEXT DECORATION
+==========================
+LAYOUT
+================================
+1.FLEX LAYOUT
+2.GRID LAYOUT
+======================================
+BOOTSTRAP
+===============================================
+BOOTSTRAP IS POWERFULL,EXTENSIBLE AND SELF PACKED FRONT END TOOL KIT
+UTILITY
+==========================
+FASTER DESIGN
+USING BOOTSTRAP HERE
+=========================================
+TEXT
+BACKGROUND COLOR
+TABLE
+FORM DESIGN
+================================================
+DATE:06.08.2026
+================================================================================
+JAVASCRIPT IS A PROGRAMMING LANGUAGE.BEFORE 2010 IT IS CONSIDERED AS SCRIPTING
+LANGUAGE.JAVASCRIPT NOW ABLE TO COMMUNICATE DATABASE,APPLICATION SERVER ETC
+PURPOSE
+==================================
+1.DYNAMIC USER INTERFACE
+2.CLIENT SIDE AND SERVER SIDE VALIDATION
+3.COMMUNICATE WITH FRONT END AND BACK END APPLICATION
+AREAS OF JAVASCRIPT APPLICATION
+======================================
+1.DESKTOP APPLICATION
+2.WEB APPLICATION
+3.MOBILE APPLICATION
+4.ML APPS
+TO RUN A JAVASCRIPT APPLICATION
+===========================================
+JAVASCRIPT RUNTIME ENVIRONMENT
+========================================
+NODEJS
+WE CAN ALSO DIRECTLY USE JAVASCRIPT IN HTML 
+============================================
+<head>
+<script>
+
+</script>
+
+</head>
+DATA TYPES
+=============================================
+1.PRIMITIVE DATATYPES
+NUMBER,STRING,SYMBOL,BIGINT,BOOLEAN,UNDEFINED,NULL
+2.NON PRIMITIVE TYPES
+============================
+OBJECT
+
+TYPES OF FUNCTION JAVASCRIPT
+===================================
+1.CONCRETE FUNCTION
+2.PARAMERISED FUNCTION
+3.FUNCTION WITH RETURN STATEMENT
+4.ANNONYMOUS FUNCTION
+5.CALLBACK FUNCTION
+6.HIGHER ORDER FUNCTION
+7.ARROW FUNCTION
+============================================================================
+MYSQL CAN BE LOGIN IN THREE WAYS
+======================================
+1.COMMAND PROMPT
+2.MYSQL COMMAND LINE CLIENT
+3.MYSQL WORKBENCH
+==============================================================
+DBMS/RDBMS
+=================================================================
+DATABASE MANAGEMENT SYSTEM
+DATABASE IS COLLECTION OF INTERRELATED DATA OR TABLES
+DBMS==DATABASE+SQL(STRUCTURED QUERY LANGUAGE)
+C++,JAVA====HLL==PROCEDURAL LANGUAGE
+HOW PART WHAT PART IS KNOWN TO US
+SQL==NON PROCEDURAL LANGUAGE
+HOW PART IS NOT KNOWN TO US
+WHAT PART IS KNOWN TO US
+EX: SELECT * FROM STUDENT;
+RDBMS==REALTIONAL DATABASE MANAGEMENT SYSTEM
+RDBMS==DATABASE+SQL
+SOFTWARE
+=================
+ORACLE
+SQLSERVER
+MYSQL
+================================
+SQL COMMANDS
+=======================
+DDL==DATA DEFINATION LANGUAGE
+================================
+CREATE,ALTER,RENAME,TRUNCATE,DROP,PURGE
+DML==DATA MANIPULATION LANGUAGE
+=================================
+INSERT,UPDATE,DELETE,MERGE
+DATA RETRIEVAL
+==========================
+SELECT
+TCL==TRANSACTION CONTROL LANGUAGE
+=====================================
+COMMIT,ROLLBACK,SAVEPOINT
+DCL==DATA CONTROL LANGUAGE
+==============================
+GRANT,REVOKE
+DATA TYPES OF MYSQL
+=============================
+1.VARCHAR
+2.CHAR
+2.NUMBER
+4.DECIMAL
+5.DATE
+6.TIMESTAMP
+SNAME CHAR(10)====AJOY
+SNAME VARCHAR(10)===AJOY
+DATE===YYYY-MM-DD
+
+SHOW DATABASES;
+CREATE DATABASE JEES;
+USE JEES;
+SHOW TABLES;
+CREATE TABLE CUSTOMER(
+CID VARCHAR(10),
+CNAME VARCHAR(25),
+CPHNO VARCHAR(10)); 
+DESC CUSTOMER;
+mysql> DESC CUSTOMER;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| CID   | varchar(10) | YES  |     | NULL    |       |
+| CNAME | varchar(25) | YES  |     | NULL    |       |
+| CPHNO | varchar(10) | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+INSERT INTO CUSTOMER VALUES('C1','ARUP','2222');
+SELECT * FROM CUSTOMER;
+mysql> SELECT * FROM CUSTOMER;
++------+-------+-------+
+| CID  | CNAME | CPHNO |
++------+-------+-------+
+| C1   | ARUP  | 2222  |
++------+-------+-------+
+INSERT INTO CUSTOMER VALUES('C1','ARUP','2222');
+SELECT * FROM CUSTOMER;
+CONSTRAINTS
+===================================================
+BEFORE INSERTING ANY DATA INTO TABLE YOU HAVE TO SATISFY CERTAIN RULES AND REGULATION 
+CALLED CONSTRAINT
+
+TYPES OF CONSTRAINTS
+===========================
+1.PRIMARY KEY===IT DOES NOT ACCEPT NULL VALUE AS WELL AS DUPLICATE VALUE
+2.UNIQUE KEY====IT DOES NOT ACCEPT DUPLICATE VALUE BUT ACCEPT NULL VALUE
+3.NOT NULL=====YOU CAN'T LEFT BLANK TO THE FIELD
+4.CHECK CONSTRAINT===YOU HAVE TO SATISFY PREDEFINED VALUES
+  EX:GENDER===M/F
+5.FOREIGN KEY===IT WILL ACCEPT OTHER TABLES PRIMARY KEY ONLY
+
+CREATE TABLE DEPT(
+DEPTNO VARCHAR(10),
+DNAME  VARCHAR(25) NOT NULL,
+LOC    VARCHAR(25) NOT NULL,
+CONSTRAINT DEPT_DEPTNO_PK PRIMARY KEY(DEPTNO));
+mysql> DESC DEPT;
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| DEPTNO | varchar(10) | NO   | PRI | NULL    |       |
+| DNAME  | varchar(25) | NO   |     | NULL    |       |
+| LOC    | varchar(25) | NO   |     | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+INSERT INTO DEPT VALUES('D1','MKTG','KOLKATA');
+SELECT * FROM DEPT;
+mysql> SELECT * FROM DEPT;
++--------+-------+---------+
+| DEPTNO | DNAME | LOC     |
++--------+-------+---------+
+| D1     | MKTG  | KOLKATA |
++--------+-------+---------+
+INSERT INTO DEPT VALUES('D2',NULL,'KOLKATA');
+mysql> SELECT * FROM DEPT;
++--------+---------+---------+
+| DEPTNO | DNAME   | LOC     |
++--------+---------+---------+
+| D1     | MKTG    | KOLKATA |
+| D2     | FINANCE | CHENNAI |
+| D3     | HR      | DELHI   |
+| D4     | OPRN    | KOLKATA |
++--------+---------+---------+
+
+
+CREATE TABLE EMP
+(EID VARCHAR(10),
+ ENAME VARCHAR(25) NOT NULL,
+ JOB   VARCHAR(25),
+ SAL   DECIMAL,
+ COMM  DECIMAL,
+ HIREDATE DATE,
+ DEPTNO VARCHAR(10),
+ CONSTRAINT EMP_EID_PK PRIMARY KEY(EID),
+ CONSTRAINT EMP_DEPTNO_FK FOREIGN KEY(DEPTNO) REFERENCES DEPT(DEPTNO)
+);
+DESC EMP;
+
+mysql> DESC EMP;
++----------+---------------+------+-----+---------+-------+
+| Field    | Type          | Null | Key | Default | Extra |
++----------+---------------+------+-----+---------+-------+
+| EID      | varchar(10)   | NO   | PRI | NULL    |       |
+| ENAME    | varchar(25)   | NO   |     | NULL    |       |
+| JOB      | varchar(25)   | YES  |     | NULL    |       |
+| SAL      | decimal(10,0) | YES  |     | NULL    |       |
+| COMM     | decimal(10,0) | YES  |     | NULL    |       |
+| HIREDATE | date          | YES  |     | NULL    |       |
+| DEPTNO   | varchar(10)   | YES  | MUL | NULL    |       |
++----------+---------------+------+-----+---------+-------+
+
+ysql> SELECT * FROM EMP;
++-----+---------+---------+-------+------+------------+--------+
+| EID | ENAME   | JOB     | SAL   | COMM | HIREDATE   | DEPTNO |
++-----+---------+---------+-------+------+------------+--------+
+| E1  | SUMAN   | MANAGER | 50000 | 5000 | 2018-02-12 | D1     |
+| E2  | ALOKE   | CLERK   | 25000 | 2000 | 2016-02-15 | D1     |
+| E3  | ANNANYA | ANALYST | 45000 | 6000 | 2016-05-15 | D2     |
+| E4  | RUPAM   | MANAGER | 65000 | NULL | 2017-05-15 | D2     |
+| E5  | JAYANTA | CLERK   | 30000 | NULL | 2018-07-18 | D3     |
+| E6  | ROBIN   | MANAGER | 55000 | 4000 | 2019-05-25 | D3     |
++-----+---------+---------+-------+------+------------+--------+
+DATE:07.08.2026
+============================================================================
+DATA RETRIEVAL
+================================
+1.ALL ROWS
+SELECT * FROM EMP;
+
+mysql> SELECT * FROM EMP;
++-----+---------+---------+-------+------+------------+--------+
+| EID | ENAME   | JOB     | SAL   | COMM | HIREDATE   | DEPTNO |
++-----+---------+---------+-------+------+------------+--------+
+| E1  | SUMAN   | MANAGER | 50000 | 5000 | 2018-02-12 | D1     |
+| E2  | ALOKE   | CLERK   | 25000 | 2000 | 2016-02-15 | D1     |
+| E3  | ANNANYA | ANALYST | 45000 | 6000 | 2016-05-15 | D2     |
+| E4  | RUPAM   | MANAGER | 65000 | NULL | 2017-05-15 | D2     |
+| E5  | JAYANTA | CLERK   | 30000 | NULL | 2018-07-18 | D3     |
+| E6  | ROBIN   | MANAGER | 55000 | 4000 | 2019-05-25 | D3     |
++-----+---------+---------+-------+------+------------+--------+
+2.SPECIFIC COLUMN
+SELECT ENAME,JOB,SAL FROM EMP;
++---------+---------+-------+
+| ENAME   | JOB     | SAL   |
++---------+---------+-------+
+| SUMAN   | MANAGER | 50000 |
+| ALOKE   | CLERK   | 25000 |
+| ANNANYA | ANALYST | 45000 |
+| RUPAM   | MANAGER | 65000 |
+| JAYANTA | CLERK   | 30000 |
+| ROBIN   | MANAGER | 55000 |
++---------+---------+-------+
+3.RESTRICTION OF DATA
+==========================================================================
+IT IS DONE WHERE CLUASE
+SELECT * FROM EMP WHERE ENAME='SUMAN';
++-----+-------+---------+-------+------+------------+--------+
+| EID | ENAME | JOB     | SAL   | COMM | HIREDATE   | DEPTNO |
++-----+-------+---------+-------+------+------------+--------+
+| E1  | SUMAN | MANAGER | 50000 | 5000 | 2018-02-12 | D1     |
++-----+-------+---------+-------+------+------------+--------+
+SELECT * FROM EMP WHERE JOB='CLERK';
++-----+---------+-------+-------+------+------------+--------+
+| EID | ENAME   | JOB   | SAL   | COMM | HIREDATE   | DEPTNO |
++-----+---------+-------+-------+------+------------+--------+
+| E2  | ALOKE   | CLERK | 25000 | 2000 | 2016-02-15 | D1     |
+| E5  | JAYANTA | CLERK | 30000 | NULL | 2018-07-18 | D3     |
++-----+---------+-------+-------+------+------------+--------+
+IN OPERATOR
+======================================
+SELECT * FROM EMP WHERE JOB IN('CLERK','ANALYST');
++-----+---------+---------+-------+------+------------+--------+
+| EID | ENAME   | JOB     | SAL   | COMM | HIREDATE   | DEPTNO |
++-----+---------+---------+-------+------+------------+--------+
+| E2  | ALOKE   | CLERK   | 25000 | 2000 | 2016-02-15 | D1     |
+| E3  | ANNANYA | ANALYST | 45000 | 6000 | 2016-05-15 | D2     |
+| E5  | JAYANTA | CLERK   | 30000 | NULL | 2018-07-18 | D3     |
++-----+---------+---------+-------+------+------------+--------+
+SELECT * FROM EMP WHERE JOB NOT IN('CLERK','ANALYST');
+
+AND OPERATOR
+=========================================
+SELECT * FROM EMP WHERE JOB='CLERK' AND SAL >25000;
++-----+---------+-------+-------+------+------------+--------+
+| EID | ENAME   | JOB   | SAL   | COMM | HIREDATE   | DEPTNO |
++-----+---------+-------+-------+------+------------+--------+
+| E5  | JAYANTA | CLERK | 30000 | NULL | 2018-07-18 | D3     |
++-----+---------+-------+-------+------+------------+--------+
+SELECT * FROM EMP WHERE JOB='CLERK' OR SAL >25000;
++-----+---------+---------+-------+------+------------+--------+
+| EID | ENAME   | JOB     | SAL   | COMM | HIREDATE   | DEPTNO |
++-----+---------+---------+-------+------+------------+--------+
+| E1  | SUMAN   | MANAGER | 50000 | 5000 | 2018-02-12 | D1     |
+| E2  | ALOKE   | CLERK   | 25000 | 2000 | 2016-02-15 | D1     |
+| E3  | ANNANYA | ANALYST | 45000 | 6000 | 2016-05-15 | D2     |
+| E4  | RUPAM   | MANAGER | 65000 | NULL | 2017-05-15 | D2     |
+| E5  | JAYANTA | CLERK   | 30000 | NULL | 2018-07-18 | D3     |
+| E6  | ROBIN   | MANAGER | 55000 | 4000 | 2019-05-25 | D3     |
++-----+---------+---------+-------+------+------------+--------+
+LIKE OPERATOR
+======================================================================
+SELECT * FROM EMP WHERE ENAME LIKE 'S%';
++-----+-------+---------+-------+------+------------+--------+
+| EID | ENAME | JOB     | SAL   | COMM | HIREDATE   | DEPTNO |
++-----+-------+---------+-------+------+------------+--------+
+| E1  | SUMAN | MANAGER | 50000 | 5000 | 2018-02-12 | D1     |
++-----+-------+---------+-------+------+------------+--------+
+SELECT * FROM EMP WHERE ENAME LIKE '_L%';
++-----+-------+-------+-------+------+------------+--------+
+| EID | ENAME | JOB   | SAL   | COMM | HIREDATE   | DEPTNO |
++-----+-------+-------+-------+------+------------+--------+
+| E2  | ALOKE | CLERK | 25000 | 2000 | 2016-02-15 | D1     |
++-----+-------+-------+-------+------+------------+--------+
+SELECT * FROM EMP WHERE ENAME LIKE '%N';
++-----+-------+---------+-------+------+------------+--------+
+| EID | ENAME | JOB     | SAL   | COMM | HIREDATE   | DEPTNO |
++-----+-------+---------+-------+------+------------+--------+
+| E1  | SUMAN | MANAGER | 50000 | 5000 | 2018-02-12 | D1     |
+| E6  | ROBIN | MANAGER | 55000 | 4000 | 2019-05-25 | D3     |
+SELECT * FROM EMP WHERE ENAME LIKE '%A%';
++-----+---------+---------+-------+------+------------+--------+
+| EID | ENAME   | JOB     | SAL   | COMM | HIREDATE   | DEPTNO |
++-----+---------+---------+-------+------+------------+--------+
+| E1  | SUMAN   | MANAGER | 50000 | 5000 | 2018-02-12 | D1     |
+| E2  | ALOKE   | CLERK   | 25000 | 2000 | 2016-02-15 | D1     |
+| E3  | ANNANYA | ANALYST | 45000 | 6000 | 2016-05-15 | D2     |
+| E4  | RUPAM   | MANAGER | 65000 | NULL | 2017-05-15 | D2     |
+| E5  | JAYANTA | CLERK   | 30000 | NULL | 2018-07-18 | D3     |
++-----+---------+---------+-------+------+------------+--------+
+
+ARITHMETIC OPERATOR
+======================================
++,-,/,*
+ARITHMETIC OPERATOR IS APPLICABLE IN NUMBER COLUMN
+SELECT ENAME,JOB,SAL,COMM,SAL+COMM TOTALSAL FROM EMP;
++---------+---------+-------+------+----------+
+| ENAME   | JOB     | SAL   | COMM | SAL+COMM |
++---------+---------+-------+------+----------+
+| SUMAN   | MANAGER | 50000 | 5000 |    55000 |
+| ALOKE   | CLERK   | 25000 | 2000 |    27000 |
+| ANNANYA | ANALYST | 45000 | 6000 |    51000 |
+| RUPAM   | MANAGER | 65000 | NULL |     NULL |
+| JAYANTA | CLERK   | 30000 | NULL |     NULL |
+| ROBIN   | MANAGER | 55000 | 4000 |    59000 |
++---------+---------+-------+------+----------+
+mysql> SELECT ENAME,JOB,SAL,IFNULL(COMM,0) COMM,SAL+IFNULL(COMM,0) TOTALSAL FROM EMP;
++---------+---------+-------+------+----------+
+| ENAME   | JOB     | SAL   | COMM | TOTALSAL |
++---------+---------+-------+------+----------+
+| SUMAN   | MANAGER | 50000 | 5000 |    55000 |
+| ALOKE   | CLERK   | 25000 | 2000 |    27000 |
+| ANNANYA | ANALYST | 45000 | 6000 |    51000 |
+| RUPAM   | MANAGER | 65000 |    0 |    65000 |
+| JAYANTA | CLERK   | 30000 |    0 |    30000 |
+| ROBIN   | MANAGER | 55000 | 4000 |    59000 |
++---------+---------+-------+------+----------+
+
+
+SORTING OF DATA
+==============================
+ASCENDING ORDER
+DESCENDING ORDER (DESC)
+
+SEELCT * FROM EMP ORDER BY SAL DESC;
+mysql> SELECT * FROM EMP ORDER BY SAL DESC;
++-----+---------+---------+-------+------+------------+--------+
+| EID | ENAME   | JOB     | SAL   | COMM | HIREDATE   | DEPTNO |
++-----+---------+---------+-------+------+------------+--------+
+| E4  | RUPAM   | MANAGER | 65000 | NULL | 2017-05-15 | D2     |
+| E6  | ROBIN   | MANAGER | 55000 | 4000 | 2019-05-25 | D3     |
+| E1  | SUMAN   | MANAGER | 50000 | 5000 | 2018-02-12 | D1     |
+| E3  | ANNANYA | ANALYST | 45000 | 6000 | 2016-05-15 | D2     |
+| E5  | JAYANTA | CLERK   | 30000 | NULL | 2018-07-18 | D3     |
+| E2  | ALOKE   | CLERK   | 25000 | 2000 | 2016-02-15 | D1     |
++-----+---------+---------+-------+------+------------+--------+
+SELECT * FROM EMP ORDER BY SAL DESC LIMIT 2;
++-----+-------+---------+-------+------+------------+--------+
+| EID | ENAME | JOB     | SAL   | COMM | HIREDATE   | DEPTNO |
++-----+-------+---------+-------+------+------------+--------+
+| E4  | RUPAM | MANAGER | 65000 | NULL | 2017-05-15 | D2     |
+| E6  | ROBIN | MANAGER | 55000 | 4000 | 2019-05-25 | D3     |
++-----+-------+---------+-------+------+------------+--------+
+
+EQUI JOIN
+=================================
+BOTH THE TABLES COMMON DATA
+mysql> SELECT E.ENAME,E.JOB,E.SAL,D.DEPTNO,D.DNAME,D.LOC FROM EMP E,DEPT D WHERE E.DEPTNO=D.DEPTNO;
++---------+---------+-------+--------+---------+---------+
+| ENAME   | JOB     | SAL   | DEPTNO | DNAME   | LOC     |
++---------+---------+-------+--------+---------+---------+
+| SUMAN   | MANAGER | 50000 | D1     | MKTG    | KOLKATA |
+| ALOKE   | CLERK   | 25000 | D1     | MKTG    | KOLKATA |
+| ANNANYA | ANALYST | 45000 | D2     | FINANCE | CHENNAI |
+| RUPAM   | MANAGER | 65000 | D2     | FINANCE | CHENNAI |
+| JAYANTA | CLERK   | 30000 | D3     | HR      | DELHI   |
+| ROBIN   | MANAGER | 55000 | D3     | HR      | DELHI   |
++---------+---------+-------+--------+---------+---------+
+SELECT E.ENAME,E.JOB,E.SAL,D.DEPTNO,D.DNAME,D.LOC FROM EMP E JOIN DEPT D ON(E.DEPTNO=D.DEPTNO);
+VIEW
+=====================================
+VIEW IS LOGICAL STRUCTURE OF TABLE BUT IT DOES NOT STORE DATA PERMANENTLY
+CREATE VIEW EMPDEPTVW AS 
+SELECT E.ENAME,E.JOB,E.SAL,D.DEPTNO,D.DNAME,D.LOC FROM EMP E,DEPT D WHERE E.DEPTNO=D.DEPTNO;
+mysql> SELECT * FROM EMPDEPTVW;
++---------+---------+-------+--------+---------+---------+
+| ENAME   | JOB     | SAL   | DEPTNO | DNAME   | LOC     |
++---------+---------+-------+--------+---------+---------+
+| ALOKE   | CLERK   | 25000 | D1     | MKTG    | KOLKATA |
+| SUMAN   | MANAGER | 50000 | D1     | MKTG    | KOLKATA |
+| RUPAM   | MANAGER | 65000 | D2     | FINANCE | CHENNAI |
+| ANNANYA | ANALYST | 45000 | D2     | FINANCE | CHENNAI |
+| ROBIN   | MANAGER | 55000 | D3     | HR      | DELHI   |
+| JAYANTA | CLERK   | 30000 | D3     | HR      | DELHI   |
+| NULL    | NULL    |  NULL | D4     | OPRN    | KOLKATA |
++---------+---------+-------+--------+---------+---------+
+DML COMMANDS
+==========================================================
+INSERT,UPDATE,DELETE
+DUPLICATE TABLE
+===========================================================
+CREATE TABLE DEPT1 AS SELECT * FROM DEPT;
+DUPLICATE TABLE WITHOUT DATA
+==============================================================
+mysql> CREATE TABLE DEPT2 AS SELECT * FROM DEPT WHERE 1=2;
+Query OK, 0 rows affected (0.04 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> SELECT * FROM DEPT2;
+Empty set (0.00 sec)
+
+mysql> CREATE TABLE DEPT3 AS SELECT * FROM DEPT WHERE DEPTNO IS NULL;
+Query OK, 0 rows affected (0.04 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> SELECT * FROM DEPT3;
+Empty set (0.00 sec)
+==========================================================================
+
+SELECT * FROM DEPT1;
+
++--------+---------+---------+
+| DEPTNO | DNAME   | LOC     |
++--------+---------+---------+
+| D1     | MKTG    | KOLKATA |
+| D2     | FINANCE | CHENNAI |
+| D3     | HR      | DELHI   |
+| D4     | OPRN    | KOLKATA |
++--------+---------+---------+
+
+DELETE DATA
+==================================================
+DELETE FROM DEPT1 WHERE DEPTNO='D4';
+SELECT * FROM DEPT1;
+| DEPTNO | DNAME   | LOC     |
++--------+---------+---------+
+| D1     | MKTG    | KOLKATA |
+| D2     | FINANCE | CHENNAI |
+| D3     | HR      | DELHI   |
++--------+---------+---------+
+UPDATE DATA
+==========================================================
+UPDATE DEPT1 SET DNAME='IT',LOC='BANGALORE' WHERE DEPTNO='D3';
+SELECT * FROM DEPT1;
+
++--------+---------+-----------+
+| DEPTNO | DNAME   | LOC       |
++--------+---------+-----------+
+| D1     | MKTG    | KOLKATA   |
+| D2     | FINANCE | CHENNAI   |
+| D3     | IT      | BANGALORE |
++--------+---------+-----------+
+
+JDBC
+====================================================================
+JAVA DATABASE CONNECTIVITY
+import java.sql.*;===SET OF CLASSES AND SET OF INTERFACES
+LIST OF INTERFACES
+===================================
+1.Connection===TO ESTABLISH THE CONNECTION
+2.Statement====EXECUTE SQL QUERIES
+3.PreparedStatement==EXECUTE PRECOMPILED SQL QUERIES
+4.CallableStatement==EXECUTE STORED PROCEDURE
+5.ResultSet==== STORE DATA INTO RESULTSET
+6.ResultsetMetaData===GIVE DETAILS INFORMATION OF RESULTSET
+7.DatabaseMetaData===GIVE DETAILS INFORMATION DATABASE
+CLASSES
+==========================
+1.DrivarManager==============REGISTER AND LOAD THE JDBC DRIVER
+2.Date=======DEALING WITH DATE DATA TYPES
+3.TIMESTAMP====DEALS WITH BOTH DATE AND TIME
+EXCEPTION HANDLE HERE
+======================================================
+1.ClassNotFoundException
+2.SQLException
+
+TYPES OF JDBC DRIVER
+============================================================
+1.TYPE-I DRIVER
+2.TYPE-II DRIVER
+3.TYPE-III DRIVER
+4.TYPE-IV DRIVER
+=====================================================
+CREATE TABLE PRODUCT
+(PID VARCHAR(10),
+ PNAME VARCHAR(25) NOT NULL,
+ PRICE DECIMAL,
+ CONSTRAINT PRODUCT_PID_PK PRIMARY KEY(PID));
+mysql> DESC PRODUCT;
++-------+---------------+------+-----+---------+-------+
+| Field | Type          | Null | Key | Default | Extra |
++-------+---------------+------+-----+---------+-------+
+| PID   | varchar(10)   | NO   | PRI | NULL    |       |
+| PNAME | varchar(25)   | NO   |     | NULL    |       |
+| PRICE | decimal(10,0) | YES  |     | NULL    |       |
++-------+---------------+------+-----+---------+-------+
+
+INSERT INTO PRODUCT VALUES('P1','TV',25000);
+INSERT INTO PRODUCT VALUES('P2','REFRIGERATOR',27000);
+
+mysql> SELECT * FROM PRODUCT;
++-----+--------------+-------+
+| PID | PNAME        | PRICE |
++-----+--------------+-------+
+| P1  | TV           | 25000 |
+| P2  | REFRIGERATOR | 27000 |
++-----+--------------+-------+
+
+STEPS OF COMMUNICATION WITH DATABASE USING JDBC
+===========================================================
+1.import java.sql.*;
+2.REGISTER AND LOAD THE JDBC DRIVER
+3.ESTABLISH THE CONNECTION
+4.CREATE THE STATEMENT
+5.EXECUTE THE STATEMENT
+6.RETRIEVE THE DATA INTO RESULT SET
+7.CLOSE THE CONNECTION AND STATEMENT
+=====================================================================
+DATABASE:JEES
+USERNAME:root
+PASSWORD:arindam
+TABLE NAME:PRODUCT
+PORT NUMBER MYSQL:3306
+MACHINE NAME:localhost
+=========================================================================
+
+public int add()
+{
+}
+public Connection getConn()
+{
+}
+===============================================================================
+DATE:10.08.2026
+===============================================================================
+JEE
+=============================
+JAVA ENTERPRISE EDITION
+DISTRIBUTED SERVER SIDE ENVIRONMENT
+TYPES OF APPLICATION ARCHITECTURE
+JEE SUPPORT n-TIER ARCHITECTURE
+=============================================
+1.TWO TIER ARCHIETECTURE
+2.THREE TIER ARCHITECTURE
+3.n-TIER ARCHIETECTURE
+
+COMPONENT OF JEE
+================================
+1.SERVLET
+2.JSP
+3.JAVAMAIL
+4.JMS
+5.KAFKA
+SERVLET
+=================================
+1.SERVER SIDE PROGRAM
+2.REQUEST RESPONSE ORIENTED PROGRAM
+3.SERVLET IS A NORMAL JAVA CLASS
+4.IT ACT AS AN CONTROLLER
+import javax.servlet.*;
+import javax.servlet.http.*;
+LIFE CYCLE OF SERVLET
+========================================
+init()
+service()
+destroy()
+HIERARCHY OF SERVLET
+======================================
+FLOW OF SERVLET
+===========================================
+
+SERVLET TO SERVLET COMMUNICATION
+================================================================
+SERVLET TO SERVLET COMMUNICATION IS DONE BY RequestDispatcher Class
+===================================================================
+GET METHOD     VS           POST METHOD
+=============================================================
+1.IT IS IN SECURED             1.IT IS SECURED
+2.DATA EMBEDDED IN URL         2.DATA IS NOT EMBEDDED IN URL
+3.IT IS MUCH MORE FASTER       3.IT IS SLOWER THAN GET METHOD 
+  THAN POST 
+4.AMOUNT OF DATA  RESTRICTED   4.ANY AMOUNT OF DATA CAN BE SENT
+=====================================================================
+JSP
+==================================================
+JAVA SERVER PAGES
+HTML                      VS         JSP
+================================================
+1.IT SUPPORT ONLY  HTML TAG       1.JSP SUPPORT BOTH HTML TAG AND JAVA CODE
+2.IT IS ACT AS AN VIEW PAGE       2.IT IS ACT AS AN VIEW PAGE
+=======================================================================
+Show.jsp
+==========================================================
+<body>
+<h2>     </h2>
+<%
+  int x;
+  int y;
+%>
+
+</body>
+<%    %>===SCRIPLET
+<% =X %>====EXPRESSION
+JSP IS ANOTHER FORM OF SERVLET
+Show.jsp===compile===Show_Jsp.java====show_Jsp.class
+                     SERVLET
+LIFE CYCLE OF JSP
+======================================
+jspInit()
+jspService()
+jspDestroy()
+=============================================
+JSPTOJSP COMMUNICATION
+
+ACTION TAG IN JSP
+============================================================
+IN THIS TAGS IN BUILT CODE ALREADY THERE FOR DOING SOME ACTION
+THESE TAG SHOULD NOT BE USED IN SCRIPLET
+<jsp:include>
+<jsp:forward>
+<jsp:setProperty>
+<jsp:getProperty>
+<jsp:param>
+<jsp:useBean>
+=========================================================
+DATE:11.08.2026
+============================================================
+SESSION MANAGEMENT
+==========================================================
+SESSIN MANAGEMENT CAN BE DONE BY FOUR WAYS
+===========================================================
+1.URL REWRITTING
+2.SESSION
+3.COOKIES
+4.INPUT FROM HIDDEN FIELDS
+======================================
+DESIGN PATTERN
+======================================
+WELL APPROVED SOLUTION
+MVC DESIGN PATTERN
+==================================================
+M==MODEL===COMMUNICATE DATABASE
+V==VIEW====FRONT END PAGE OR DISPLAY JAVA===JSP
+C=CONTROLLER===SERVLET
+=================================================================================
+SERVLET JSP JDBC CONNECTION USING MVC DESIGN PATTERN WITH PROJECT
+================================================================================
+RDBMS SOFTWARE:MYSQL
+IDE:ECLIPSE
+JAVA:JAVA21 OR MORE
+==========================================================================
+FOODAPP
+DATABASE
+========================
+mysql> CREATE  DATABASE FOODAPPDBS;
+USE FOODAPPDBS;
+CREATE TABLE FOOD
+(FID VARCHAR(10),
+ FNAME VARCHAR(25) NOT NULL,
+ PRICE DECIMAL,
+ CONSTRAINT FOOD_FID_PK PRIMARY KEY(FID)
+);
+
+mysql> DESC FOOD;
++-------+---------------+------+-----+---------+-------+
+| Field | Type          | Null | Key | Default | Extra |
++-------+---------------+------+-----+---------+-------+
+| FID   | varchar(10)   | NO   | PRI | NULL    |       |
+| FNAME | varchar(25)   | NO   |     | NULL    |       |
+| PRICE | decimal(10,0) | YES  |     | NULL    |       |
++-------+---------------+------+-----+---------+-------+
+
+
+CREATE TABLE ORDERDTLS
+(OID INT PRIMARY KEY AUTO_INCREMENT,
+ ODT DATE DEFAULT (CURRENT_DATE()),
+ FID VARCHAR(10) NOT NULL,
+ QTY INT,
+ UNAME VARCHAR(15)
+);
+
+DATE:12.08.2026
+=================================================
+mysql> CREATE TABLE REGISTER
+    -> (UNAME VARCHAR(10),
+    ->  PASS  VARCHAR(10) NOT NULL,
+    ->  NM    VARCHAR(25),
+    ->  CONSTRAINT REGISTER_UNAME_PK PRIMARY KEY(UNAME)
+    -> );
+Query OK, 0 rows affected (0.05 sec)
+
+mysql> DESC REGISTER;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| UNAME | varchar(10) | NO   | PRI | NULL    |       |
+| PASS  | varchar(10) | NO   |     | NULL    |       |
+| NM    | varchar(25) | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+=============================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
