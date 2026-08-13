@@ -1,0 +1,64 @@
+DATE:13.08.2026
+===================================================================
+ADVANCED JAVA
+==========================================
+JEE
+===================================
+JAVA ENTERPRISE EDITION
+TYPES OF APPLICATION
+===========================================================
+1.DESKTOP APPLICATION
+2.WEB APPLICATION
+3.MOBILE APPLICATION
+4.ML APPS
+5.ENTERPRISE APPLICATION
+java -version
+=========================================================
+INSTALL TOMCAT
+WEB PROJECT
+====================================================
+FILE===NEW===DYNAMIC WEB PROJECT==========
+
+JEEFRONTEND
+
+http://localhost:8080/JEEFRONTEND/Demo.html
+HTML
+========================================
+HYPER TEXT MARKUP  LANGUAGE
+PURPOSE
+==================================================
+TO STRUCTURE THE CONTENT OF THE WEB PAGE
+WEB PAGE
+===================================================
+ELETRONIC WEB PAGE WHERE WE DISPLAY SOME CONTENTS
+HTML IS COLLECTION OF ELEMENTS.
+ELEMENTS ARE REPRESENTED BY SOME TAGS.
+TYPES OF TAG
+=====================================
+1.OPENING TAG
+2.CLOSING TAG
+3.SLEF CLOSING TAG
+<h2>        WELCOME    </h2>
+opening     contents    closing tag
+tag
+<img/>===SELF CLOSING TAG
+WHY MARKUP LANGUAGE
+============================================
+LANGUAGE CONSIDERED TO BE MARKUP IF THERE IS TAG,ATTRIBURE AND PARAMETER IS THERE
+LIST OF ELEMENTS
+=========================
+1.HEADING
+2.PARAGRAPH
+3.TABLE
+4.IMAGE
+5.IFRAME
+6.LIST
+HEADING AND PARAGRAPH
+=================================================
+
+
+
+
+
+
+
