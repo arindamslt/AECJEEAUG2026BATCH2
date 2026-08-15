@@ -1,0 +1,22 @@
+#main{
+	/*background-color: red;*/
+	display: flex;
+}
+#left{
+	/*background-color: blue;*/
+	width: 30%;
+}
+#right{
+	/*background-color: gray;*/
+	width:50%;
+	text-align: center;
+	h2{
+		text-decoration: underline;
+	}
+	button{
+		color:white;
+		background-color: black;
+		border-radius: 10px;
+		padding: 5px;
+	}
+}

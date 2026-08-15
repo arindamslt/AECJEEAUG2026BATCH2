@@ -55,6 +55,92 @@ LIST OF ELEMENTS
 6.LIST
 HEADING AND PARAGRAPH
 =================================================
+LIST ELEMENTS
+==================================================
+THREE TYPES
+==============================================
+1.UNORDERED LIST
+2.ORDERED LIST
+3.DEFINATION LIST
+================================================
+NAVIGATION
+==================================================
+LINK BETWEEN THE HTML PAGES
+1.INTER NAVIGATION
+2.INTRA NAVIGATION
+
+DIV
+=========================================================
+
+IFRAME
+==========================================================
+IFRAME CAN ABLE TO CONTAIN ENTIRE HTML PAGE
+GOOGLEMAP INTEGRATION
+YOUTUBE INTEGRATION
+
+DATE:14.08.2026
+==========================================================================
+CSS
+======================================
+CSS STANDS FOR CASCADDING STYLE SHEET
+CSS IS STYLING LANGUAGE
+PURPOSE
+================================================
+FORMATTING OR DESIGNING THE ELEMENT OF HTML
+IN CSS THERE ARE SET OF PROPERTIES
+EACH PROPERTIES ARE REPRESENTED BY MEANS OF KEY & VALUE PAIR
+FOR EX:
+======================
+color="red";
+KEY    VALUE
+ELEMENT OF HTML IS ACCESSED BY SELECTOR BY CSS
+===============================================
+SELECTOR ARE
+===================================
+1.TAG NAME
+2.ID VALUE
+3.CLASS VALUE
+TYPES OF CSS
+================================================
+I.INLINE CSS
+2.INTERNAL CSS
+3.EXTERNAL CSS
+INLINE CSS              VS              INTERNAL CSS
+===========================================================
+1.UNIQUE STYLING                     1.MORE STYLING
+2.IF IT IS MAXIMUM                   2.IF MORE THAN THREE THEN GO FOR INTERNAL CSS
+THREE PROPERTIES TO BE
+ADDED IS RECOMMENDED
+===========================================================================
+EXTERNAL CSS
+============================================
+IF THE CSS IS LENGTHY AND COMPLEX  THEN IT IS BETTER TO GO FOR EXTERNAL CSS
+IF MULTIPLE DOCUMENT WANT TO GET SAME STYLING
+====================================================================
+TEXT DECORATION
+=======================================================
+MARGIN AND PADDING
+LAYOUT
+================================================
+1.FLEX LAYOUT
+2.GRID LAYOUT
+===================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
