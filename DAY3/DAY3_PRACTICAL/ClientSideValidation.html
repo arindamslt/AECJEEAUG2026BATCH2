@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>CLIENT SIDE VAILDATION</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+<style>
+	.error{
+		color:red;
+		font-size: 12px;
+	}
+</style>
+<script>
+	function clearForm()
+	{
+		document.getElementById("unameerror").innerText="";
+		document.getElementById("passerror").innerText="";
+		document.getElementById("cpasserror").innerText="";
+		document.getElementById("mobnoerror").innerText="";
+	}
+	function validateForm()
+	{
+		clearForm();
+		var valid=true;
+		var uname=document.getElementById("uname").value.trim();
+		//alert(uname);
+		var pass=document.getElementById("pass").value.trim();
+		//alert(pass);
+		var cpass=document.getElementById("cpass").value.trim();
+		//alert(cpass);
+		var mobno=document.getElementById("mobno").value.trim();
+	//	alert(mobno);
+		if(uname.length<5)
+		{
+			document.getElementById("unameerror").innerText="USERNAME MUST BE 5 CHARECTER LONG";
+			valid=false;
+		}
+		if(!(pass.length>=5 && pass.length<=8))
+		{
+			document.getElementById("passerror").innerText="PASSWORD MUST BE IN BETWEEN 5 TO 8 CHARECTER LONG";
+			valid=false;
+		}
+		if(pass!=cpass)
+		{
+			document.getElementById("cpasserror").innerText="PASSWORD MISMATCH";
+			valid=false;
+		}
+		if(isNaN(mobno))
+		{
+			document.getElementById("mobnoerror").innerText="MOBILE NUMBER MUST DIGIT ONLY";
+			valid=false;
+		}
+		if(valid)
+		{
+			alert("REGISTRATION SUCCESS");
+		}
+		return valid;
+	}
+</script>
+</head>
+<body>
+<div style="width:30%;margin:50px auto;">
+	<h2 class="text-primary">REGISTRATION FORM</h2>
+	<form onsubmit="return validateForm()" action="Show.html">
+		<input type="text" id="uname" class="form-control" placeholder="ENTER THE USERNAME"/>
+		<h4 id="unameerror" class="error"></h4>
+		<input type="password" id="pass" class="form-control" placeholder="ENTER THE PASSWORD"/>
+		<h4 id="passerror" class="error"></h4>
+		<input type="password" id="cpass" class="form-control" placeholder="ENTER THE CONFIRM PASSWORD"/>
+		<h4 id="cpasserror" class="error"></h4>
+		<input type="text" id="mobno" class="form-control" placeholder="ENTER THE MOBILE NUMBER"/>
+	    <h4 id="mobnoerror" class="error"></h4>
+	    <input type="submit" value="REGISTER" class="btn btn-outline-primary"/>
+	</form>
+</div>
+</body>
+</html>

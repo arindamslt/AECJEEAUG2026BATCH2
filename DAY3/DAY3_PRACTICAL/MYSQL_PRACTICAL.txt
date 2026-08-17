@@ -1,0 +1,130 @@
+SHOW DATABASES;
+CREATE DATABASE JEESDB;
+SHOW DATABASES;
+USE JEESDB;
+SHOW TABLES;
+
+CREATE TABLE CUSTOMER
+(CID VARCHAR(10),
+ CNAME VARCHAR(25),
+ CPHNO  VARCHAR(10));
+mysql> DESC CUSTOMER;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| CID   | varchar(10) | YES  |     | NULL    |       |
+| CNAME | varchar(25) | YES  |     | NULL    |       |
+| CPHNO | varchar(10) | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+
+INSERT INTO CUSTOMER VALUES('C1','ARUP','34444');
+mysql> SELECT * FROM CUSTOMER;
++------+-------+-------+
+| CID  | CNAME | CPHNO |
++------+-------+-------+
+| C1   | ARUP  | 34444 |
++------+-------+-------+
+1 row in set (0.00 sec)
+INSERT INTO CUSTOMER VALUES('C1','ARUP','34444');
+SELECT * FROM CUSTOMER;
+mysql> SELECT * FROM CUSTOMER;
++------+-------+-------+
+| CID  | CNAME | CPHNO |
++------+-------+-------+
+| C1   | ARUP  | 34444 |
+| C1   | ARUP  | 34444 |
++------+-------+-------+
+
+CREATE TABLE DEPT
+(DEPTNO VARCHAR(10),
+ DNAME  VARCHAR(25) NOT NULL,
+ LOC    VARCHAR(25) NOT NULL,
+CONSTRAINT DEPT_DEPTNO_PK PRIMARY KEY(DEPTNO)
+);
+DESC DEPT;
+mysql> DESC DEPT;
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| DEPTNO | varchar(10) | NO   | PRI | NULL    |       |
+| DNAME  | varchar(25) | NO   |     | NULL    |       |
+| LOC    | varchar(25) | NO   |     | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+INSERT INTO DEPT VALUES('D1','MKTG','KOLKATA');
+mysql> SELECT * FROM DEPT;
++--------+-------+---------+
+| DEPTNO | DNAME | LOC     |
++--------+-------+---------+
+| D1     | MKTG  | KOLKATA |
++--------+-------+---------+
+INSERT INTO DEPT VALUES('D1','MKTG','KOLKATA');
+INSERT INTO DEPT VALUES('D2','FINANCE','CHENNAI');
+INSERT INTO DEPT VALUES('D3','HR','DELHI');
+INSERT INTO DEPT VALUES('D4','OPRN','KOLKATA');
+SELECT * FROM DEPT;
+
+mysql> SELECT * FROM DEPT;
++--------+---------+---------+
+| DEPTNO | DNAME   | LOC     |
++--------+---------+---------+
+| D1     | MKTG    | KOLKATA |
+| D2     | FINANCE | CHENNAI |
+| D3     | HR      | DELHI   |
+| D4     | OPRN    | KOLKATA |
++--------+---------+---------+
+CREATE TABLE EMP
+(EID VARCHAR(10),
+ ENAME VARCHAR(25) NOT NULL,
+ JOB   VARCHAR(25),
+ SAL   DECIMAL,
+ COMM  DECIMAL,
+ HIREDATE DATE,
+ DEPTNO VARCHAR(10),
+ CONSTRAINT EMP_EID_PK PRIMARY KEY(EID),
+ CONSTRAINT EMP_DEPTNO_FK FOREIGN KEY(DEPTNO) REFERENCES DEPT(DEPTNO)
+);
+mysql> DESC EMP;
++----------+---------------+------+-----+---------+-------+
+| Field    | Type          | Null | Key | Default | Extra |
++----------+---------------+------+-----+---------+-------+
+| EID      | varchar(10)   | NO   | PRI | NULL    |       |
+| ENAME    | varchar(25)   | NO   |     | NULL    |       |
+| JOB      | varchar(25)   | YES  |     | NULL    |       |
+| SAL      | decimal(10,0) | YES  |     | NULL    |       |
+| COMM     | decimal(10,0) | YES  |     | NULL    |       |
+| HIREDATE | date          | YES  |     | NULL    |       |
+| DEPTNO   | varchar(10)   | YES  | MUL | NULL    |       |
++----------+---------------+------+-----+---------+-------+
+INSERT INTO EMP VALUES('E1','SUMAN','MANAGER',50000,5000,'2018-02-12','D1');
+INSERT INTO EMP VALUES('E2','ALOKE','CLERK',25000,2000,'2016-02-15','D1');
+INSERT INTO EMP VALUES('E3','ANNANYA','ANALYST',45000,6000,'2016-05-15','D2');
+INSERT INTO EMP VALUES('E4','RUPAM','MANAGER',65000,NULL,'2017-05-15','D2');
+INSERT INTO EMP VALUES('E5','JAYANTA','CLERK',30000,NULL,'2018-07-18','D3');
+INSERT INTO EMP VALUES('E6','ROBIN','MANAGER',55000,4000,'2019-05-25','D3');
+mysql> SELECT * FROM EMP;
++-----+---------+---------+-------+------+------------+--------+
+| EID | ENAME   | JOB     | SAL   | COMM | HIREDATE   | DEPTNO |
++-----+---------+---------+-------+------+------------+--------+
+| E1  | SUMAN   | MANAGER | 50000 | 5000 | 2018-02-12 | D1     |
+| E2  | ALOKE   | CLERK   | 25000 | 2000 | 2016-02-15 | D1     |
+| E3  | ANNANYA | ANALYST | 45000 | 6000 | 2016-05-15 | D2     |
+| E4  | RUPAM   | MANAGER | 65000 | NULL | 2017-05-15 | D2     |
+| E5  | JAYANTA | CLERK   | 30000 | NULL | 2018-07-18 | D3     |
+| E6  | ROBIN   | MANAGER | 55000 | 4000 | 2019-05-25 | D3     |
++-----+---------+---------+-------+------+------------+--------+
+
+mysql> SELECT * FROM DEPT;
++--------+---------+---------+
+| DEPTNO | DNAME   | LOC     |
++--------+---------+---------+
+| D1     | MKTG    | KOLKATA |
+| D2     | FINANCE | CHENNAI |
+| D3     | HR      | DELHI   |
+| D4     | OPRN    | KOLKATA |
++--------+---------+---------+
+SELECT * FROM DEPT;
+SELECT * FROM EMP;
+
+
+
+

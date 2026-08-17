@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<script>
+	//CONCRETE FUNCTION
+	function fn1()
+	{
+		document.write("CONCRETE FUNCTION");
+	}
+	fn1();
+	document.write("<br/>");
+	//PARAMETERISED FUNCTION
+	function fn2(x,y)
+	{
+		document.write(x,y);
+	}
+	fn2(10,20);
+	document.write("<br/>");
+	//FUNCTION WITH RETURN STATEMENT
+	function fn3(a,b)
+	{
+		return(a+b);
+	}
+	var res=fn3(15,20);
+	document.write(res);
+	document.write("<br/>");
+	//ANNONYMOUS FUNCTION
+	//FUNCTION WITHOUT NAME
+	function fn4(f)
+	{
+		f();
+	}
+	fn4(function(){
+		var  state='WESTBENGAL';
+		document.write(state);
+	})
+	document.write("<br/>");
+	//HIGHER ORDER AND CALLBACK FUNCTION
+	function print()
+	{
+		var dist='24pgs north';
+		document.write(dist);
+	}
+	function fn5(f)
+	{
+		f();
+	}
+	fn5(print());//HERE fn5 is HIGER ORDER FUNCTION AND PRINT IS A CALLBACK FUNCTION
+</script>
+<title>JAVASCRIPT FUNCTION</title>
+</head>
+<body>
+
+</body>
+</html>

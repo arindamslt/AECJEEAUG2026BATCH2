@@ -125,25 +125,288 @@ LAYOUT
 1.FLEX LAYOUT
 2.GRID LAYOUT
 ===================================================
+BOOTSTRAP
+================================================================================
+BOOTSTRAP IS POWERFULL,EXTENSIBLE AND SELF PACKED FRONT END TOOL.
+PURPOSE
+==========================================================
+FASTER DESIGN
+WE WILL USE BOOTSTRAP IN
+=============================
+HEADING TAG
+BACK GROUND COLOR
+TABLE ELEMENTS
+FORM DESIGN
+====================================
+DATE:17.08.2026
+================================================================
+JAVASCRIPT IS A PROGRAMMING LANGUAGE.BEFORE 2010 IT IS CALLED AS A SCRIPTING LANGUAGE.
+NOW JAVASCRIPT CAN COMMUNICATE DATABASE AND APPLICATION SERVER
+PURPOSE
+===================================================
+1.DYNAMIC USER INTERFACE
+2.COMMUNICATE FRONT END AND BACK END APPLICATION
+3.PROVIDE CLIENT SIDE AND SERVER SIDE VALIDATION
+
+AREAS OF JAVASCRIPT
+=========================================
+1.STAND ALONE APPLICATION
+2.WEB APPLICATION
+3.MOBILE APPLICATION
+4.ML APPS
+TO RUN A JAVASCRIPT
+=========================================
+JAVASCRIPT RUN TIME ENVIRONMENT
+====================================
+NODEJS
+WRITING IN HTML FILE USING <script> TAG
+DATA TYPES
+=====================================
+PRIMITIVE TYPES:number,string,bigint,symbol,boolean,null,undefined
+NON PRIMITIVE TYPES:OBJECT
+===================================================
+HTML FILE
+<header>
+<script>
+
+
+</script>
+</head>
+JSVariable.html
+DECLARE A VARIBALE
+===============================
+var
+let
+const
 
 
 
+FUNCTION IN JAVASCRIPT
+================================
+1.CONCRETE FUNCTION
+2.PARAMETERISED FUNCTION
+3.FUNCTION WITH RETURN STATEMENT
+4.ANNONYMOUS FUNCTION
+5.CALLBACK FUNCTION
+6.HIGHER ORDER FUNCTION
+7.ARROW FUNCTION
+FUNCTION EXPRESSION
+==============================================================
+EVENT HANDELLING
+===============================================================
+DOM
+=============================================================
+DOCUMENT OBJECT MODEL
+THE HTML DOCUMENT COMPILED INTO OBJECTS CALLED NODE.
+WHEN THE NODE ARE TREE LIKE DATASTRUCTURE THEN IT IS CALLED DOM.
+EVENT
+============================================================
+STATE CHANGE OF THE SOURCE
+CLIENT SIDE VALIDATION
+===========================================================
 
+MYSQL
+==================================================
+DBMS/RDBMS
+==================================================
+DBMS==DATABASE MANAGEMENT SYSTEM
+RDBMS==RELATIONAL DATABASE MANAGEMENT SYSTEM
+DATABASE
+===============================
+COLLECTION OF INTERLARED DATA OR TABLES
+DBMS/RDBMS===DATABASE+SQL(STRUCTURED QUERY LANGUAGE)
+C++,JAVA=======PROCEDURAL LANGUAGE
+HERE BOTH HOW PART AND WHAT PART KNOWN TO US
+SQL==4GL==CALLED NONO PROCEDURAL LANGUAGE
+WHAT PART IS KNOWN TO US
+HOW PART IS NOT KNOWN US
+SELECT * FROM STUDENT;
+DBMS/RDBMS===IS A CONCEPT
+RDBMS KIND OF SOFTWARE
+==================================
+1.ORACLE
+2.SQLSERVER
+3.MYSQL===OPEN SOURCE
+SQL COMMANDS
+===============================================================
+1.DDL==DATA DEFINATION LANGUAGE
+CREATE,ALTER,RENAME,TRUNCATE,DROP,PURGE
+2.DML==DATA MANIPULATION LANGUAGE
+====================================
+INSERT,UPDATE,DELETE,MERGE
+DATA RETRIEVAL
+===================================
+SELECT
+TCL==TRANSACTION CONTROL LANGUAGE
+====================================
+COMMIT,ROLLBACK,SAVEPOINT
+DCL==DATA CONTROL LANGUAGE
+==================================
+GRANT,REVOKE
+=================================================
+DATA TYPES OF MYSQL
+==========================================================
+SNAME CHAR(25)===GARGI  SNAME VARCHAR(25)  
 
+CHAR(1)==GENDER==M/F
+                 Y/N
+1.CHAR
+2.VARCHAR
+3.INT
+4.DECIMAL
+5.DATE===========YYYY-MM-DD
+                 2026-08-17
+6.TIMESTAMP===BOTH DATE AND TIME
+ARCHITECTURE OF MYSQL
+LOGIN IN MYSQL
+=======================================
+1.COMMAND PROMPT
+2.MYSQL COMMAND LINE CLIENT
+3.MYSQL WORKBENCH
+SHOW DATABASES;
+CREATE DATABASE JEESDB;
+SHOW DATABASES;
+USE JEESDB;
+SHOW TABLES;
+TABLE CREATION
+===================================
+1.WITHOUT CONSTRAINT 
+2.WITH CONSTRAINT
 
+CREATE TABLE CUSTOMER
+(CID VARCHAR(10),
+ CNAME VARCHAR(25),
+ CPHNO  VARCHAR(10));
+mysql> DESC CUSTOMER;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| CID   | varchar(10) | YES  |     | NULL    |       |
+| CNAME | varchar(25) | YES  |     | NULL    |       |
+| CPHNO | varchar(10) | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
 
+INSERT INTO CUSTOMER VALUES('C1','ARUP','34444');
+mysql> SELECT * FROM CUSTOMER;
++------+-------+-------+
+| CID  | CNAME | CPHNO |
++------+-------+-------+
+| C1   | ARUP  | 34444 |
++------+-------+-------+
+1 row in set (0.00 sec)
+INSERT INTO CUSTOMER VALUES('C1','ARUP','34444');
+SELECT * FROM CUSTOMER;
+mysql> SELECT * FROM CUSTOMER;
++------+-------+-------+
+| CID  | CNAME | CPHNO |
++------+-------+-------+
+| C1   | ARUP  | 34444 |
+| C1   | ARUP  | 34444 |
++------+-------+-------+
 
+CONSTRAINT
+=================================================================
+BNEFORE INSERTING DATA INTO TABLE YOU HAVE TO SATISFY CERTAIN RULES AND REGULATIONS
+CALLED CONSTRAINT
+TYPES OF CONSTRAINT
+================================================
+1.PRIMARY KEY===IT DOES NOT ACCEPT NULL VALUE AS WELL AS DUPLICATE VALUE
+2.UNIQUE KEY===IT DOES NOT ACCEPT DUPLICATE VALUE BUT ACCEPT NULL VALUE
+3.NOT NULL==YOU CAN'T LEFT BLANK TO THE FIELD
+4.CHECK CONSTRAINT===YOU HAVE TO SATISFY PREDEFINED VALUES
+                    GENDER===M/F
+                    AGE==21 TO 58
+5.FOREIGN KEY===IT WILL ACCEPT OTHER TABLE PRIMARY KEY VALUE ONLY
+==========================================================================
+CREATE TABLE DEPT
+(DEPTNO VARCHAR(10),
+ DNAME  VARCHAR(25) NOT NULL,
+ LOC    VARCHAR(25) NOT NULL,
+CONSTRAINT DEPT_DEPTNO_PK PRIMARY KEY(DEPTNO)
+);
+DESC DEPT;
+mysql> DESC DEPT;
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| DEPTNO | varchar(10) | NO   | PRI | NULL    |       |
+| DNAME  | varchar(25) | NO   |     | NULL    |       |
+| LOC    | varchar(25) | NO   |     | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+INSERT INTO DEPT VALUES('D1','MKTG','KOLKATA');
+mysql> SELECT * FROM DEPT;
++--------+-------+---------+
+| DEPTNO | DNAME | LOC     |
++--------+-------+---------+
+| D1     | MKTG  | KOLKATA |
++--------+-------+---------+
+INSERT INTO DEPT VALUES('D1','MKTG','KOLKATA');
+INSERT INTO DEPT VALUES('D2','FINANCE','CHENNAI');
+INSERT INTO DEPT VALUES('D3','HR','DELHI');
+INSERT INTO DEPT VALUES('D4','OPRN','KOLKATA');
+SELECT * FROM DEPT;
 
+mysql> SELECT * FROM DEPT;
++--------+---------+---------+
+| DEPTNO | DNAME   | LOC     |
++--------+---------+---------+
+| D1     | MKTG    | KOLKATA |
+| D2     | FINANCE | CHENNAI |
+| D3     | HR      | DELHI   |
+| D4     | OPRN    | KOLKATA |
++--------+---------+---------+
+CREATE TABLE EMP
+(EID VARCHAR(10),
+ ENAME VARCHAR(25) NOT NULL,
+ JOB   VARCHAR(25),
+ SAL   DECIMAL,
+ COMM  DECIMAL,
+ HIREDATE DATE,
+ DEPTNO VARCHAR(10),
+ CONSTRAINT EMP_EID_PK PRIMARY KEY(EID),
+ CONSTRAINT EMP_DEPTNO_FK FOREIGN KEY(DEPTNO) REFERENCES DEPT(DEPTNO)
+);
+mysql> DESC EMP;
++----------+---------------+------+-----+---------+-------+
+| Field    | Type          | Null | Key | Default | Extra |
++----------+---------------+------+-----+---------+-------+
+| EID      | varchar(10)   | NO   | PRI | NULL    |       |
+| ENAME    | varchar(25)   | NO   |     | NULL    |       |
+| JOB      | varchar(25)   | YES  |     | NULL    |       |
+| SAL      | decimal(10,0) | YES  |     | NULL    |       |
+| COMM     | decimal(10,0) | YES  |     | NULL    |       |
+| HIREDATE | date          | YES  |     | NULL    |       |
+| DEPTNO   | varchar(10)   | YES  | MUL | NULL    |       |
++----------+---------------+------+-----+---------+-------+
+INSERT INTO EMP VALUES('E1','SUMAN','MANAGER',50000,5000,'2018-02-12','D1');
+INSERT INTO EMP VALUES('E2','ALOKE','CLERK',25000,2000,'2016-02-15','D1');
+INSERT INTO EMP VALUES('E3','ANNANYA','ANALYST',45000,6000,'2016-05-15','D2');
+INSERT INTO EMP VALUES('E4','RUPAM','MANAGER',65000,NULL,'2017-05-15','D2');
+INSERT INTO EMP VALUES('E5','JAYANTA','CLERK',30000,NULL,'2018-07-18','D3');
+INSERT INTO EMP VALUES('E6','ROBIN','MANAGER',55000,4000,'2019-05-25','D3');
+mysql> SELECT * FROM EMP;
++-----+---------+---------+-------+------+------------+--------+
+| EID | ENAME   | JOB     | SAL   | COMM | HIREDATE   | DEPTNO |
++-----+---------+---------+-------+------+------------+--------+
+| E1  | SUMAN   | MANAGER | 50000 | 5000 | 2018-02-12 | D1     |
+| E2  | ALOKE   | CLERK   | 25000 | 2000 | 2016-02-15 | D1     |
+| E3  | ANNANYA | ANALYST | 45000 | 6000 | 2016-05-15 | D2     |
+| E4  | RUPAM   | MANAGER | 65000 | NULL | 2017-05-15 | D2     |
+| E5  | JAYANTA | CLERK   | 30000 | NULL | 2018-07-18 | D3     |
+| E6  | ROBIN   | MANAGER | 55000 | 4000 | 2019-05-25 | D3     |
++-----+---------+---------+-------+------+------------+--------+
 
-
-
-
-
-
-
-
-
-
+mysql> SELECT * FROM DEPT;
++--------+---------+---------+
+| DEPTNO | DNAME   | LOC     |
++--------+---------+---------+
+| D1     | MKTG    | KOLKATA |
+| D2     | FINANCE | CHENNAI |
+| D3     | HR      | DELHI   |
+| D4     | OPRN    | KOLKATA |
++--------+---------+---------+
+SELECT * FROM DEPT;
+SELECT * FROM EMP;
 
 
 
