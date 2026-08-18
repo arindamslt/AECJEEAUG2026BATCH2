@@ -1,277 +1,8 @@
-DATE:13.08.2026
-===================================================================
-ADVANCED JAVA
-==========================================
-JEE
-===================================
-JAVA ENTERPRISE EDITION
-TYPES OF APPLICATION
-===========================================================
-1.DESKTOP APPLICATION
-2.WEB APPLICATION
-3.MOBILE APPLICATION
-4.ML APPS
-5.ENTERPRISE APPLICATION
-java -version
-=========================================================
-INSTALL TOMCAT
-WEB PROJECT
-====================================================
-FILE===NEW===DYNAMIC WEB PROJECT==========
-
-JEEFRONTEND
-
-http://localhost:8080/JEEFRONTEND/Demo.html
-HTML
-========================================
-HYPER TEXT MARKUP  LANGUAGE
-PURPOSE
-==================================================
-TO STRUCTURE THE CONTENT OF THE WEB PAGE
-WEB PAGE
-===================================================
-ELETRONIC WEB PAGE WHERE WE DISPLAY SOME CONTENTS
-HTML IS COLLECTION OF ELEMENTS.
-ELEMENTS ARE REPRESENTED BY SOME TAGS.
-TYPES OF TAG
-=====================================
-1.OPENING TAG
-2.CLOSING TAG
-3.SLEF CLOSING TAG
-<h2>        WELCOME    </h2>
-opening     contents    closing tag
-tag
-<img/>===SELF CLOSING TAG
-WHY MARKUP LANGUAGE
-============================================
-LANGUAGE CONSIDERED TO BE MARKUP IF THERE IS TAG,ATTRIBURE AND PARAMETER IS THERE
-LIST OF ELEMENTS
-=========================
-1.HEADING
-2.PARAGRAPH
-3.TABLE
-4.IMAGE
-5.IFRAME
-6.LIST
-HEADING AND PARAGRAPH
-=================================================
-LIST ELEMENTS
-==================================================
-THREE TYPES
-==============================================
-1.UNORDERED LIST
-2.ORDERED LIST
-3.DEFINATION LIST
-================================================
-NAVIGATION
-==================================================
-LINK BETWEEN THE HTML PAGES
-1.INTER NAVIGATION
-2.INTRA NAVIGATION
-
-DIV
-=========================================================
-
-IFRAME
-==========================================================
-IFRAME CAN ABLE TO CONTAIN ENTIRE HTML PAGE
-GOOGLEMAP INTEGRATION
-YOUTUBE INTEGRATION
-
-DATE:14.08.2026
-==========================================================================
-CSS
-======================================
-CSS STANDS FOR CASCADDING STYLE SHEET
-CSS IS STYLING LANGUAGE
-PURPOSE
-================================================
-FORMATTING OR DESIGNING THE ELEMENT OF HTML
-IN CSS THERE ARE SET OF PROPERTIES
-EACH PROPERTIES ARE REPRESENTED BY MEANS OF KEY & VALUE PAIR
-FOR EX:
-======================
-color="red";
-KEY    VALUE
-ELEMENT OF HTML IS ACCESSED BY SELECTOR BY CSS
-===============================================
-SELECTOR ARE
-===================================
-1.TAG NAME
-2.ID VALUE
-3.CLASS VALUE
-TYPES OF CSS
-================================================
-I.INLINE CSS
-2.INTERNAL CSS
-3.EXTERNAL CSS
-INLINE CSS              VS              INTERNAL CSS
-===========================================================
-1.UNIQUE STYLING                     1.MORE STYLING
-2.IF IT IS MAXIMUM                   2.IF MORE THAN THREE THEN GO FOR INTERNAL CSS
-THREE PROPERTIES TO BE
-ADDED IS RECOMMENDED
-===========================================================================
-EXTERNAL CSS
-============================================
-IF THE CSS IS LENGTHY AND COMPLEX  THEN IT IS BETTER TO GO FOR EXTERNAL CSS
-IF MULTIPLE DOCUMENT WANT TO GET SAME STYLING
-====================================================================
-TEXT DECORATION
-=======================================================
-MARGIN AND PADDING
-LAYOUT
-================================================
-1.FLEX LAYOUT
-2.GRID LAYOUT
-===================================================
-BOOTSTRAP
-================================================================================
-BOOTSTRAP IS POWERFULL,EXTENSIBLE AND SELF PACKED FRONT END TOOL.
-PURPOSE
-==========================================================
-FASTER DESIGN
-WE WILL USE BOOTSTRAP IN
-=============================
-HEADING TAG
-BACK GROUND COLOR
-TABLE ELEMENTS
-FORM DESIGN
-====================================
-DATE:17.08.2026
-================================================================
-JAVASCRIPT IS A PROGRAMMING LANGUAGE.BEFORE 2010 IT IS CALLED AS A SCRIPTING LANGUAGE.
-NOW JAVASCRIPT CAN COMMUNICATE DATABASE AND APPLICATION SERVER
-PURPOSE
-===================================================
-1.DYNAMIC USER INTERFACE
-2.COMMUNICATE FRONT END AND BACK END APPLICATION
-3.PROVIDE CLIENT SIDE AND SERVER SIDE VALIDATION
-
-AREAS OF JAVASCRIPT
-=========================================
-1.STAND ALONE APPLICATION
-2.WEB APPLICATION
-3.MOBILE APPLICATION
-4.ML APPS
-TO RUN A JAVASCRIPT
-=========================================
-JAVASCRIPT RUN TIME ENVIRONMENT
-====================================
-NODEJS
-WRITING IN HTML FILE USING <script> TAG
-DATA TYPES
-=====================================
-PRIMITIVE TYPES:number,string,bigint,symbol,boolean,null,undefined
-NON PRIMITIVE TYPES:OBJECT
-===================================================
-HTML FILE
-<header>
-<script>
-
-
-</script>
-</head>
-JSVariable.html
-DECLARE A VARIBALE
-===============================
-var
-let
-const
-
-
-
-FUNCTION IN JAVASCRIPT
-================================
-1.CONCRETE FUNCTION
-2.PARAMETERISED FUNCTION
-3.FUNCTION WITH RETURN STATEMENT
-4.ANNONYMOUS FUNCTION
-5.CALLBACK FUNCTION
-6.HIGHER ORDER FUNCTION
-7.ARROW FUNCTION
-FUNCTION EXPRESSION
-==============================================================
-EVENT HANDELLING
-===============================================================
-DOM
-=============================================================
-DOCUMENT OBJECT MODEL
-THE HTML DOCUMENT COMPILED INTO OBJECTS CALLED NODE.
-WHEN THE NODE ARE TREE LIKE DATASTRUCTURE THEN IT IS CALLED DOM.
-EVENT
-============================================================
-STATE CHANGE OF THE SOURCE
-CLIENT SIDE VALIDATION
-===========================================================
-
-MYSQL
-==================================================
-DBMS/RDBMS
-==================================================
-DBMS==DATABASE MANAGEMENT SYSTEM
-RDBMS==RELATIONAL DATABASE MANAGEMENT SYSTEM
-DATABASE
-===============================
-COLLECTION OF INTERLARED DATA OR TABLES
-DBMS/RDBMS===DATABASE+SQL(STRUCTURED QUERY LANGUAGE)
-C++,JAVA=======PROCEDURAL LANGUAGE
-HERE BOTH HOW PART AND WHAT PART KNOWN TO US
-SQL==4GL==CALLED NONO PROCEDURAL LANGUAGE
-WHAT PART IS KNOWN TO US
-HOW PART IS NOT KNOWN US
-SELECT * FROM STUDENT;
-DBMS/RDBMS===IS A CONCEPT
-RDBMS KIND OF SOFTWARE
-==================================
-1.ORACLE
-2.SQLSERVER
-3.MYSQL===OPEN SOURCE
-SQL COMMANDS
-===============================================================
-1.DDL==DATA DEFINATION LANGUAGE
-CREATE,ALTER,RENAME,TRUNCATE,DROP,PURGE
-2.DML==DATA MANIPULATION LANGUAGE
-====================================
-INSERT,UPDATE,DELETE,MERGE
-DATA RETRIEVAL
-===================================
-SELECT
-TCL==TRANSACTION CONTROL LANGUAGE
-====================================
-COMMIT,ROLLBACK,SAVEPOINT
-DCL==DATA CONTROL LANGUAGE
-==================================
-GRANT,REVOKE
-=================================================
-DATA TYPES OF MYSQL
-==========================================================
-SNAME CHAR(25)===GARGI  SNAME VARCHAR(25)  
-
-CHAR(1)==GENDER==M/F
-                 Y/N
-1.CHAR
-2.VARCHAR
-3.INT
-4.DECIMAL
-5.DATE===========YYYY-MM-DD
-                 2026-08-17
-6.TIMESTAMP===BOTH DATE AND TIME
-ARCHITECTURE OF MYSQL
-LOGIN IN MYSQL
-=======================================
-1.COMMAND PROMPT
-2.MYSQL COMMAND LINE CLIENT
-3.MYSQL WORKBENCH
 SHOW DATABASES;
 CREATE DATABASE JEESDB;
 SHOW DATABASES;
 USE JEESDB;
 SHOW TABLES;
-TABLE CREATION
-===================================
-1.WITHOUT CONSTRAINT 
-2.WITH CONSTRAINT
 
 CREATE TABLE CUSTOMER
 (CID VARCHAR(10),
@@ -304,20 +35,6 @@ mysql> SELECT * FROM CUSTOMER;
 | C1   | ARUP  | 34444 |
 +------+-------+-------+
 
-CONSTRAINT
-=================================================================
-BNEFORE INSERTING DATA INTO TABLE YOU HAVE TO SATISFY CERTAIN RULES AND REGULATIONS
-CALLED CONSTRAINT
-TYPES OF CONSTRAINT
-================================================
-1.PRIMARY KEY===IT DOES NOT ACCEPT NULL VALUE AS WELL AS DUPLICATE VALUE
-2.UNIQUE KEY===IT DOES NOT ACCEPT DUPLICATE VALUE BUT ACCEPT NULL VALUE
-3.NOT NULL==YOU CAN'T LEFT BLANK TO THE FIELD
-4.CHECK CONSTRAINT===YOU HAVE TO SATISFY PREDEFINED VALUES
-                    GENDER===M/F
-                    AGE==21 TO 58
-5.FOREIGN KEY===IT WILL ACCEPT OTHER TABLE PRIMARY KEY VALUE ONLY
-==========================================================================
 CREATE TABLE DEPT
 (DEPTNO VARCHAR(10),
  DNAME  VARCHAR(25) NOT NULL,
@@ -407,8 +124,7 @@ mysql> SELECT * FROM DEPT;
 +--------+---------+---------+
 SELECT * FROM DEPT;
 SELECT * FROM EMP;
-DATE:18.08.2026
-===========================================================================================
+
 SHOW DATABASES;
 USE JEESDB;
 SHOW TABLES;
@@ -573,20 +289,6 @@ mysql> SELECT * FROM EMP ORDER BY SAL DESC LIMIT 2;
 | E6  | ROBIN | MANAGER | 55000 | 4000 | 2019-05-25 | D3     |
 +-----+-------+---------+-------+------+------------+--------+
 SELECT * FROM EMP ORDER BY HIREDATE  LIMIT 2;
-================================================================
-JOINING OF TABLES
-=======================================================
-JOINING MEANS FETCHING DATA FROM MULTIPLE TABLES
-
-TYPES OF JOINING
-==========================================
-1.EQUI JOIN===BOTH THE TABLES COMMON DATA
-2.OUTER JOIN===COMMON DATA OF BOTH TABLE+EXTRA DATA OF THE TABLE OR TABLES
-  LEFT OUTER JOIN===COMMON DATA+LEFT TABLE EXTRA DATA
-  RIGHT OUTER JOIN==COMMON DATA+RIGHT TABLE EXTRA DATA
-  FULL  OUTER JOIN==COMMON DATA+BOTH THE TABLES EXTRA DATA
-3.NON EQUI JOIN
-4.SELF JOIN
 mysql> SELECT * FROM DEPT;
 +--------+---------+---------+
 | DEPTNO | DNAME   | LOC     |
@@ -698,13 +400,6 @@ mysql> SELECT E.ENAME,E.JOB,E.SAL,D.DEPTNO,D.DNAME,D.LOC FROM EMP E RIGHT OUTER 
 | NULL  | NULL | NULL | D4     | OPRN  | KOLKATA |
 +-------+------+------+--------+-------+---------+
 
-DML
-===========================================
-DATA MANIPULATION LANGUAGE
-===============================
-INSERT,UPDATE,DELETE,MERGE
-DUPLICATE TABLE
-===============================================================
 CREATE TABLE DEPT1 AS SELECT * FROM DEPT;
 SELECT * FROM DEPT1;
 DESC DEPT;
@@ -779,102 +474,6 @@ mysql> SELECT * FROM DEPT1;
 | D3     | HR      | DELHI   |
 +--------+---------+---------+
 ========================================================================
-JDBC
-====================================================================
-JAVA DATABASE CONNECTIVITY
-=======================================================================
-import java.sql.*;==SET OF CLASSES AND SET OF INTERFACES
-LIST OF INTERFACES
-=====================================
-1.Connection========TO ESTABLISH THE CONNETION
-2.Statement========EXECUTE SQL QUERIES
-3.PreparedStatement===EXECUTE PRECOMPILED SQL STATEMENT
-4.ResultSet==========STORE THE DATA INTO RESULTSET
-5.ResultSetMetaData===GIVE DETAILS OF RESULTSET
-6.DatabaseMetaData====GIVE DETAILS OF DATABASE
-7.CallableStatement===EXECUTE STORED PROCEDURE
-CLASSES
-=============================================
-1.DriverManager======REGISTER AND LOAD THE JDBC DRIVER
-2.Date============DEALS WITH DATE DATA TYPE
-3.TimeStamp=======DEALS WITH BOTH DATE AND TIME
-=========================================================
-EXECPTION HANDLE HERE
-===================================
-1.ClassNotFoundException
-2.SQLException
-TYPES OF JDBC DRIVER
-========================================
-1.TYPE-I DRIVER
-2.TYPE-II DRIVER
-3.TYPE-III DRIVER
-4.TYPE-IV DRIVER
-===================================================================
-STEPS OF COMMUNICATION
-==================================================================
-1.import java.sql.*;
-2.REGISTER AND LOAD THE JDBC DRIVER
-3.ESTABLISH THE CONNECTION
-4.CREATE THE STATEMENT
-5.EXECUTE THE STATEMENT
-6.STORE THE DATA INTO RESULTSET
-7.COLSE THE CONNECTION AND STATEMENT
-====================================================================
-MYSQL
-
-====================
-DATABASE:JEESDB
-USERNAME:root
-PASSWORD:arindam
-PORT:3306
-MACHINE NAME:localhost
-====================================================
-USE JEESDB;
-CREATE TABLE PRODUCT
-(PID  VARCHAR(10),
- PNAME VARCHAR(25) NOT NULL,
- PRICE DECIMAL,
- CONSTRAINT PRODUCT_PID_PK PRIMARY KEY(PID)
-);
-mysql> DESC PRODUCT;
-+-------+---------------+------+-----+---------+-------+
-| Field | Type          | Null | Key | Default | Extra |
-+-------+---------------+------+-----+---------+-------+
-| PID   | varchar(10)   | NO   | PRI | NULL    |       |
-| PNAME | varchar(25)   | NO   |     | NULL    |       |
-| PRICE | decimal(10,0) | YES  |     | NULL    |       |
-+-------+---------------+------+-----+---------+-------+
-=======================================================
-INSERT INTO PRODUCT VALUES('P1','TV',25000);
-INSERT INTO PRODUCT VALUES('P2','REFRIGERATOR',27000);
-mysql> SELECT * FROM PRODUCT;
-+-----+--------------+-------+
-| PID | PNAME        | PRICE |
-+-----+--------------+-------+
-| P1  | TV           | 25000 |
-| P2  | REFRIGERATOR | 27000 |
-+-----+--------------+-------+
-
-System.out.println(rs.getString(1)+"==>"+rs.getString(2)+"==>"+rs.getDouble(3));
-
-public int add()
-{
-}
-public Connection getConn()
-{
-
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
