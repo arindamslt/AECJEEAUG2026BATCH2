@@ -842,7 +842,7 @@ mysql> DESC PRODUCT;
 +-------+---------------+------+-----+---------+-------+
 | PID   | varchar(10)   | NO   | PRI | NULL    |       |
 | PNAME | varchar(25)   | NO   |     | NULL    |       |
-| PRICE | decimal(10,0) | YES  |     | NULL    |       |
+| PRI.CE | decimal(10,0) | YES  |     | NULL    |       |
 +-------+---------------+------+-----+---------+-------+
 =======================================================
 INSERT INTO PRODUCT VALUES('P1','TV',25000);
@@ -864,6 +864,190 @@ public Connection getConn()
 {
 
 }
+========================================================================
+DATE:19.08.2026
+==========================================================================
+JEE
+========================================================================
+JAVA ENTERPRISE EDITION
+JEE IS n-TIER ARCHIETECTURE
+ARCHITECTURE OF APPLICATION
+======================================================
+1.TWO TIER ARCHIETECTURE
+2.THREE TIER ARCHITECTURE
+3.n-TIER ARCHITECTURE
+=============================================================
+COMPONENTS OF JEE
+=============================
+1.SERVLET
+2.JSP
+3.JMS
+4.JAVAMAIL
+5.KAFKA
+6.EJB
+
+======================================================================
+SERVLET
+=====================================
+SERVER SIDE PROGRAM
+REQUEST RESPONSE ORIENTED PROGRAM
+IT IS ACT AS AN CONTROLLER
+SERVLET IS NOTHING BUT A JAVA CLASS
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+LIFE CYCLE OF SERVLET
+==============================
+1.init()
+2.service()
+3.destroy()
+HIERARCHY OF SERVLET
+=============================
+FLOW OF SERVLET
+
+GET                 VS           POST
+======================================================
+1.NOT SECURED                   1.SECURED
+2.DATA EMBEDDED IN URL          2.DATA NOT EMBEDDED IN URL
+3.MORE FASTER THAN POST         3.SLOWER THAN GET
+4.AMOUNT OF DATA RESTRICTED     4.ANY AMOUNT OF DATA CAN BE SENT
+=============================================================================
+
+
+SERVLET TO SERVLET,SERVLET TO HTML COMMUNICATION
+=============================================================================
+RequestDispatcher Class
+===========================================================================
+JSP
+===============================================================================
+JAVA SERVER PAGES
+EXTENSION IS .jsp
+IT IS ACT AS AN VIEW PAGE
+HTML===ONLY HTML TAG IS SUPPORTED
+JSP==BOTH HTML AND JAVA SUPPORTED
+JSP===HTML CODE+JAVA CODE
+JSP TO BE CREATED IN WEBAPP FOLDER IN DYNAMIC WEB PROJECT
+IN JSP IF WE WANT TO WRITE JAVA CODE
+<%    %>===SCRIPLET
+<h2>
+FOR EX:
+<% int x=10;
+%>
+<h2>  </h2>
+IF WE WANT TO DISPLAY JAVA VALUE
+===============================
+<% =x %>====EXPRESSION 
+================================
+JSP IS ANOTHE FORM SERVLET
+Test.jsp====COMPILE===Test_Jsp.java(servlet)====Test_Jsp.class===O/P
+LIFE CYCLE OF JSP
+===============================================
+jspinit()
+jspservice()
+jspdestroy()
+==================================================
+JSP CONVERTED TO SERVLET
+==============================================================================
+C:\JEETAUGUST2026B2\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\work\Catalina\localhost\JSPDemo\org\apache\jsp
+
+JSP TO JSP COMMUNICATION
+=======================================================================================
+JSP ACTION TAG
+==========================================================================================
+<jsp:include>     IN BUILD JAVA CODES ARE THERE.IT BEHAVES LIKE A HTML TAG
+<jsp:forward>
+<jsp:param>
+<jsp:useBean>
+<jsp:setProperty>
+<jsp:getProperty>
+==================================================================================
+JSP INCUDE JSP FORWARD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\
+
+
+
+
+
+
+=========================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
