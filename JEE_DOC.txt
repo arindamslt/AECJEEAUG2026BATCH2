@@ -963,6 +963,72 @@ JSP ACTION TAG
 <jsp:getProperty>
 ==================================================================================
 JSP INCUDE JSP FORWARD
+==============================================================================
+DATE:20.08.2026
+========================================================================
+SESSION MANAGEMENT
+=======================================================================
+SESSION MANAGEMENT IS DONE BY FOUR WAYS
+===================================================================
+1.URL REWRITTING
+2.SESSION
+3.COOKIES
+4.INPUT FROM HIDDEN FIELDS
+======================================================
+DESIGN PATTERN
+================================================
+WELL APPROVED SOLUTION
+MVC DESIGN PATTERN
+M===MODEL===CLASS WHICH COMMUNICATE DATABASE===DAO(DATA ACCESS OBJECT)==NORMAL JAVA CLASS
+V==VIEW=======JSP
+C==CONTROLLER=====SERVLET
+===============================================================================
+PROJECT  NAME:FOODAPP
+SOFTWARE
+====================
+JAVA21 ONWARDS
+BACKEND
+====================
+SERVLET
+JSP
+FRONT END
+======================
+HTML
+CSS
+JAVASCRIPT
+BOOTSTRAP
+JSP
+=====================================
+DATABASE
+=======================
+MYSQL
+DESIGN PATTERN
+===================================
+
+
+MVC
+ANY PROJECT ATLEAST TWO USER REQUIRE
+=======================================
+ADMIN
+CLIENT
+==============================================
+ CREATE DATABASE FOODAPPSDBS;
+ USE FOODAPPSDBS;
+CREATE TABLE FOOD
+(FID  VARCHAR(10),
+ FNAME VARCHAR(25) NOT NULL,
+ PRICE DECIMAL,
+ CONSTRAINT FOOD_FID_PK PRIMARY KEY(FID)
+);
+mysql> DESC FOOD;
++-------+---------------+------+-----+---------+-------+
+| Field | Type          | Null | Key | Default | Extra |
++-------+---------------+------+-----+---------+-------+
+| FID   | varchar(10)   | NO   | PRI | NULL    |       |
+| FNAME | varchar(25)   | NO   |     | NULL    |       |
+| PRICE | decimal(10,0) | YES  |     | NULL    |       |
++-------+---------------+------+-----+---------+-------+
+===================================================================
 
 
 
@@ -989,7 +1055,27 @@ JSP INCUDE JSP FORWARD
 
 
 
-\
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
