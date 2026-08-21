@@ -1029,11 +1029,38 @@ mysql> DESC FOOD;
 | PRICE | decimal(10,0) | YES  |     | NULL    |       |
 +-------+---------------+------+-----+---------+-------+
 ===================================================================
+DATE:21.08.2026
+=====================================================================
+mysql> CREATE TABLE REGISTER
+    -> (UNAME VARCHAR(10),
+    ->  PASS  VARCHAR(10) NOT NULL,
+    ->  NM    VARCHAR(25) NOT NULL,
+    ->  CONSTRAINT REGISTER_UNAME_PK PRIMARY KEY(UNAME)
+    -> );
+mysql> DESC REGISTER;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| UNAME | varchar(10) | NO   | PRI | NULL    |       |
+| PASS  | varchar(10) | NO   |     | NULL    |       |
+| NM    | varchar(25) | NO   |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
 
+SERVLET
+==================================
+RegisterAddServe=====controller
+DAO
+================================
+RegisterDao(insertData())====model
 
+Success.jsp===REGISTRATION SUCCESSFULL
 
-
-
+mysql> SELECT * FROM REGISTER;
++----------+------+-------+
+| UNAME    | PASS | NM    |
++----------+------+-------+
+| suman123 | 1234 | SUMAN |
++----------+------+-------+
 
 
 
